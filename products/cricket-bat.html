@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Bat - SportsMaster</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .nav {
+            background: #f4f4f4;
+            padding: 15px;
+        }
+
+        .nav-list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-list li {
+            list-style: none;
+        }
+
+        .product {
+            display: flex;
+            padding: 20px 0;
+        }
+
+        .product-image {
+            width: 500px;
+        }
+
+        .product-details {
+            padding: 0 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .add-to-cart {
+            padding: 10px 20px;
+            background: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 200px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <ul class="nav-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../index.html#footer">About Us</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../store.html">Store</a></li>
+                <li><a href="../cart.html">Cart</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="product">
+            <div class="product-image">
+                <img src="../assets/images/cricket-bat.jpg" alt="Cricket Bat">
+            </div>
+            <div class="product-details">
+                <h1>Cricket Bat</h1>
+                <p>Professional grade cricket bat made from premium English willow.</p>
+                <p>$99.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
