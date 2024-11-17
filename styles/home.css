@@ -17,8 +17,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
+    min-height: 100vh;
     background-color: #ffcc00;
+    width: 100vw;
 }
 
 .navbar {
@@ -70,7 +71,7 @@ body {
 }
 
 .banner {
-    background-image: url('/assets/images/bgimage.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url('/assets/images/bgimage.jpg');
     background-size: cover;
     background-position: center;
     height: 800px;
@@ -85,8 +86,6 @@ body {
 
 .banner-content {
     position: relative;
-    background-color: rgba(0, 0, 0, 0.217);
-    padding: 344px 983px;
 }
 
 .banner-content h1 {
@@ -108,9 +107,4 @@ body {
 
 .footer p {
     font-size: 14px;
-}
-
-.main-section-text {
-    font-size: 60px;
-    text-align: center;
 }
