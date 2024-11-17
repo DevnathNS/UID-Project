@@ -33,11 +33,6 @@ body {
     padding: 16px;
 }
 
-.logo h1 {
-    color: white;
-    font-size: 24px;
-}
-
 .nav-links {
     display: flex;
     list-style: none;
