@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Moderustic:wght@300..800&family=Roboto+Slab:wght@100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +8,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Moderustic""
 }
 
 .top {
@@ -71,10 +74,11 @@ body {
 }
 
 .banner {
+    font-family: "Mate SC";
     background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url('/assets/images/bgimage.jpg');
     background-size: cover;
     background-position: center;
-    height: 833px;
+    height: 837px;
     display: flex;
     justify-content: center;
     align-items: center;
