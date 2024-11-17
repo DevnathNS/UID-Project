@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form - SportsMaster</title>
+    <link rel="stylesheet" href="styles/order.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="/assets/images/logo.png" alt="SportsMaster Logo">
+                </a>
+            </div>            
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            <div class="log">
+                <a href="index.html" class="logout-btn">Logout</a>
+            </div>
+        </div>
+    
+        <div class="form-container">
+            <h1>Order Form</h1>
+            <form action="thank_you.html" method="POST">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+    
+                <label>Gender:</label>
+                <div class="gender-options">
+                    <label><input type="radio" name="gender" value="Male" required> Male</label>
+                    <label><input type="radio" name="gender" value="Female" required> Female</label>
+                </div>
+    
+                <label for="product">Product:</label>
+                <select id="product" name="product" required>
+                    <option value="Cricket Bat">Cricket Bat</option>
+                    <option value="Football">Football</option>
+                    <option value="Tennis Racket">Tennis Racket</option>
+                    <option value="Basketball">Basketball</option>
+                    <option value="Shuttlecock">Shuttlecock</option>
+                    <option value="Hockey Stick">Hockey Stick</option>
+                    <option value="Volleyball">Volleyball</option>
+                    <option value="Baseball">Baseball</option>
+                    <option value="Skateboard">Skateboard</option>
+                </select>
+    
+                <label for="brand">Brand:</label>
+                <select id="brand" name="brand" required>
+                    <option value="MRF">MRF</option>
+                    <option value="Kookaburra">Kookaburra</option>
+                    <option value="Nivea">Nivea</option>
+                    <option value="Adidas">Adidas</option>
+                    <option value="Nike">Nike</option>
+                    <option value="Yonex">Yonex</option>
+                    <option value="Reebok">Reebok</option>
+                    <option value="Spalding">Spalding</option>
+                </select>
+    
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+    
+                <label for="billing-address">Billing Address:</label>
+                <textarea id="billing-address" name="billing-address" rows="4" required></textarea>
+    
+                <label for="delivery-instructions">Delivery Instructions:</label>
+                <textarea id="delivery-instructions" name="delivery-instructions" rows="4"></textarea>
+    
+                <div class="form-buttons">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        © 2024 SportsMaster. All Rights Reserved.
+    </div>
+</body>
+</html>
