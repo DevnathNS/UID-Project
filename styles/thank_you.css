@@ -7,70 +7,42 @@
 }
 
 body {
-    font-family: "Moderustic";
+    font-family: "Moderustic", sans-serif;
     background-color: #f5f5f5;
     background-image: linear-gradient(rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.227)), url('../assets/images/thank_you.jpg');
     background-size: cover;
+    background-attachment: fixed;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
-}
-
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding: 16px;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links li {
-    margin-left: 32px;
-}
-
-.nav-links a {
+/* Navbar Styling */
+.navbar-dark .navbar-nav .nav-link {
     color: white;
-    text-decoration: none;
     font-size: 16px;
     transition: color 0.3s;
 }
 
-.nav-links a:hover {
+.navbar-dark .navbar-nav .nav-link:hover {
     color: #ffcc00;
 }
 
-.logout-btn {
+.btn-warning {
     background-color: #ffcc00;
     color: black;
     border: none;
-    padding: 8px 16px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
-.logout-btn:hover {
+.btn-warning:hover {
     background-color: #e6b800;
 }
 
-/* Main content */
+/* Thank You Message */
 .thank-you-message {
-    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
     color: rgb(43, 255, 0);
     padding: 50px 20px;
-    margin: 40px auto;
     border-radius: 10px;
     max-width: 600px;
+    margin: 0 auto;
 }
 
 .thank-you-message h1 {
@@ -82,29 +54,23 @@ body {
     font-size: 18px;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .thank-you-message {
+        padding: 30px 15px;
+    }
+
+    .thank-you-message h1 {
+        font-size: 28px;
+    }
+
+    .thank-you-message p {
+        font-size: 16px;
+    }
+}
+
 /* Footer */
 footer {
     background-color: black;
     color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-footer ul {
-    list-style: none;
-    margin-top: 10px;
-}
-
-footer ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-footer ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-footer ul li a:hover {
-    color: #ffcc00;
 }

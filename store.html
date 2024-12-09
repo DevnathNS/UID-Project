@@ -4,117 +4,182 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SportsMaster Store</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/store.css">
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar">
-            <div class="logo">
-                <a href="home.html">
-                    <img src="/assets/images/logo.png" alt="">
-                </a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="store.html">Store</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-            <div class="log">
-                <button class="logout-btn">
-                    <a href="index.html" style="text-decoration: none; color: black;">Logout</a>
+    <div class="store-bg">
+        <!-- Bootstrap Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black px-3">
+            <a class="navbar-brand" href="home.html">
+                <img src="/assets/images/logo.png" alt="SportsMaster Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="store.html">Store</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                </ul>
+                <button class="btn btn-warning ms-3">
+                    <a href="index.html" class="text-black text-decoration-none">Logout</a>
                 </button>
             </div>
         </nav>
 
-        <div class="products">
-            <div class="product-card card1">
-                <img src="assets/images/cricket-bat.jpg" alt="Cricket Bat" class="product-image">
-                <div class="overlay">
-                    <p>High-quality cricket bat for professional use.</p>
-                    <a href="order.html">Order Now</a>
+        <!-- Products Container -->
+        <div class="container py-5">
+            <div class="row g-4">
+                <!-- Cricket Bat -->
+                <div class="col-12 col-md-4">
+                    <div class="product-card">
+                        <img src="assets/images/cricket-bat.jpg" alt="Cricket Bat">
+                        <div class="product-overlay">
+                            <p>High-quality cricket bat for professional use.</p>
+                            <a href="order.html" class="order-btn">Order Now</a>
+                        </div>
+                        <div class="p-3 text-center">
+                            <h3 class="h5">Cricket Bat</h3>
+                            <p class="text-white">Rs. 1000</p>
+                        </div>
+                    </div>
                 </div>
-                <h3>Cricket Bat</h3>
-                <p>Rs. 1000</p>
-            </div>
-            <div class="product-card card2">
-                <img src="assets/images/football.jpg" alt="Football" class="product-image">
-                <div class="overlay">
-                    <p>Durable football for outdoor games and training.</p>
-                    <a href="order.html">Order Now</a>
-                </div>
-                <h3>Football</h3>
-                <p>Rs. 500</p>
-            </div>
-            <div class="product-card card3">
-                <img src="assets/images/tennis.jpg" alt="Tennis Racket" class="product-image">
-                <div class="overlay">
-                    <p>Professional-grade tennis racket for all levels.</p>
-                    <a href="order.html">Order Now</a>
-                </div>
-                <h3>Tennis Racket</h3>
-                <p>Rs. 2000</p>
-            </div>
-            <div class="product-card card4">
-                <img src="assets/images/basketball.jpg" alt="Basketball" class="product-image">
-                <div class="overlay">
-                    <p>Official size basketball for training and games.</p>
-                    <a href="order.html">Order Now</a>
-                </div>
-                <h3>Basketball</h3>
-                <p>Rs. 800</p>
-            </div>
-            <div class="product-card card5">
-                <img src="assets/images/shuttlecock.jpg" alt="Shuttlecock" class="product-image">
-                <div class="overlay">
-                    <p>Durable shuttlecock for both indoor and outdoor use.</p>
-                    <a href="order.html">Order Now</a>
-                </div>
-                <h3>Shuttlecock</h3>
-                <p>Rs. 200</p>
-            </div>
-            <div class="product-card card6">
-                <img src="assets/images/hockey-stick.jpg" alt="Hockey Stick" class="product-image">
-                <div class="overlay">
-                    <p>Lightweight hockey stick designed for speed and control.</p>
-                    <a href="order.html">Order Now</a>
-                </div>
-                <h3>Hockey Stick</h3>
-                <p>Rs. 1500</p>
-            </div>
-            <div class="product-card card7">
-                <img src="assets/images/volleyball.jpg" alt="Volleyball" class="product-image">
-                <div class="overlay">
-                    <p>Perfect volleyball for recreational and professional play.</p>
-                    <a href="order.html">Order Now</a>
-                </div>
-                <h3>Volleyball</h3>
-                <p>Rs. 700</p>
-            </div>
-            <div class="product-card card8">
-                <img src="assets/images/baseball.jpg" alt="Baseball" class="product-image">
-                <div class="overlay">
-                    <p>Quality baseball for both practice and matches.</p>
-                    <a href="order.html">Order Now</a>
-                </div>
-                <h3>Baseball</h3>
-                <p>Rs. 600</p>
-            </div>
-            <div class="product-card card9">
-                <img src="assets/images/skateboard.jpg" alt="Skateboard" class="product-image">
-                <div class="overlay">
-                    <p>Sturdy skateboard for all levels of riders.</p>
-                    <a href="order.html">Order Now</a>
-                </div>
-                <h3>Skateboard</h3>
-                <p>Rs. 3000</p>
-            </div>
-        </div>        
 
-        <footer class="footer">
-            <p>© 2024 SportsMaster. All Rights Reserved.</p>
+                <!-- Football -->
+                <div class="col-12 col-md-4">
+                    <div class="product-card">
+                        <img src="assets/images/football.jpg" alt="Football">
+                        <div class="product-overlay">
+                            <p>Durable football for outdoor games and training.</p>
+                            <a href="order.html" class="order-btn">Order Now</a>
+                        </div>
+                        <div class="p-3 text-center">
+                            <h3 class="h5">Football</h3>
+                            <p class="text-white">Rs. 500</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tennis Racket -->
+                <div class="col-12 col-md-4">
+                    <div class="product-card">
+                        <img src="assets/images/tennis.jpg" alt="Tennis Racket">
+                        <div class="product-overlay">
+                            <p>Professional-grade tennis racket for all levels.</p>
+                            <a href="order.html" class="order-btn">Order Now</a>
+                        </div>
+                        <div class="p-3 text-center">
+                            <h3 class="h5">Tennis Racket</h3>
+                            <p class="text-white">Rs. 2000</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Basketball -->
+                <div class="col-12 col-md-4">
+                    <div class="product-card">
+                        <img src="assets/images/basketball.jpg" alt="Basketball">
+                        <div class="product-overlay">
+                            <p>Official size basketball for training and games.</p>
+                            <a href="order.html" class="order-btn">Order Now</a>
+                        </div>
+                        <div class="p-3 text-center">
+                            <h3 class="h5">Basketball</h3>
+                            <p class="text-white">Rs. 800</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shuttlecock -->
+                <div class="col-12 col-md-4">
+                    <div class="product-card">
+                        <img src="assets/images/shuttlecock.jpg" alt="Shuttlecock">
+                        <div class="product-overlay">
+                            <p>Durable shuttlecock for both indoor and outdoor use.</p>
+                            <a href="order.html" class="order-btn">Order Now</a>
+                        </div>
+                        <div class="p-3 text-center">
+                            <h3 class="h5">Shuttlecock</h3>
+                            <p class="text-white">Rs. 200</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hockey Stick -->
+                <div class="col-12 col-md-4">
+                    <div class="product-card">
+                        <img src="assets/images/hockey-stick.jpg" alt="Hockey Stick">
+                        <div class="product-overlay">
+                            <p>Lightweight hockey stick designed for speed and control.</p>
+                            <a href="order.html" class="order-btn">Order Now</a>
+                        </div>
+                        <div class="p-3 text-center">
+                            <h3 class="h5">Hockey Stick</h3>
+                            <p class="text-white">Rs. 1500</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Volleyball -->
+                <div class="col-12 col-md-4">
+                    <div class="product-card">
+                        <img src="assets/images/volleyball.jpg" alt="Volleyball">
+                        <div class="product-overlay">
+                            <p>Perfect volleyball for recreational and professional play.</p>
+                            <a href="order.html" class="order-btn">Order Now</a>
+                        </div>
+                        <div class="p-3 text-center">
+                            <h3 class="h5">Volleyball</h3>
+                            <p class="text-white">Rs. 700</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Baseball -->
+                <div class="col-12 col-md-4">
+                    <div class="product-card">
+                        <img src="assets/images/baseball.jpg" alt="Baseball">
+                        <div class="product-overlay">
+                            <p>Quality baseball for both practice and matches.</p>
+                            <a href="order.html" class="order-btn">Order Now</a>
+                        </div>
+                        <div class="p-3 text-center">
+                            <h3 class="h5">Baseball</h3>
+                            <p class="text-white">Rs. 600</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skateboard -->
+                <div class="col-12 col-md-4">
+                    <div class="product-card">
+                        <img src="assets/images/skateboard.jpg" alt="Skateboard">
+                        <div class="product-overlay">
+                            <p>Sturdy skateboard for all levels of riders.</p>
+                            <a href="order.html" class="order-btn">Order Now</a>
+                        </div>
+                        <div class="p-3 text-center">
+                            <h3 class="h5">Skateboard</h3>
+                            <p class="text-white">Rs. 3000</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-black text-white text-center py-3">
+            © 2024 SportsMaster. All Rights Reserved.
         </footer>
     </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
