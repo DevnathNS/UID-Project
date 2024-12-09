@@ -3,35 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Sports Plus Shop</title>
-    <link rel="stylesheet" href="styles/contact.css">
+    <title>Contact Us - SportsMaster</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/contact.css">
 </head>
 <body>
-    <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <a href="home.html">
-                    <img src="/assets/images/logo.png" alt="SportsMaster Logo">
-                </a>
-            </div>            
-            <ul class="nav-links">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="store.html">Store</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black px-3">
+        <a class="navbar-brand" href="home.html">
+            <img src="/assets/images/logo.png" alt="SportsMaster Logo" class="img-fluid" style="max-height: 40px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="store.html">Store</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
             </ul>
-            <div class="log">
-                <a href="index.html" class="logout-btn">Logout</a>
-            </div>
+            <button class="btn btn-warning ms-3"><a href="index.html" class="text-black text-decoration-none">Logout</a></button>
         </div>
-        
+    </nav>
+    
+    <!-- Contact Content -->
+    <div class="container-fluid">
         <div class="contact-container">
             <h1>Contact Us</h1>
-        
             <p>We'd love to hear from you! Whether you have questions about our products, need help with an order, or just want to talk sports, we're here for you.</p>
-        
-            <div class="contact-info">
+            
+            <!-- Contact Info -->
+            <div class="contact-info mb-4">
                 <h2>Get in Touch</h2>
                 <ul>
                     <li>📞 <strong>Phone:</strong> +1 (123) 456-7890</li>
@@ -47,36 +52,42 @@
                     </li>
                 </ul>
             </div>
-        
-            <div class="visit-us">
+            
+            <!-- Visit Us -->
+            <div class="visit-us mb-4">
                 <h2>Visit Us</h2>
                 <p>🏢 <strong>Our Store:</strong></p>
                 <p>Sports Master<br>
-                Near Amrita Vishwa Videeyapeetham,<br>
+                Near Amrita Vishwa Vidyapeetham,<br>
                 Kollam, Kerala, India</p>
                 <p><a href="https://maps.app.goo.gl/GvTJ9XAkdB9YcEzr6" target="_blank">🗺 Get Directions</a></p>
             </div>
-        
+            
+            <!-- Contact Form -->
             <div class="contact-form">
                 <h2>Send Us a Message</h2>
-                <form action="home.html" target="_blank">
+                <form action="home.html" method="POST" target="_blank">
                     <label for="name">Name:</label>
-                    <input type="text" id="name" required>
+                    <input type="text" id="name" name="name" required>
                     
                     <label for="email">Email:</label>
-                    <input type="email" id="email" required>
+                    <input type="email" id="email" name="email" required>
                     
                     <label for="message">Message:</label>
-                    <textarea id="message" rows="4" required></textarea>
+                    <textarea id="message" name="message" rows="4" required></textarea>
                     
                     <button type="submit">Send Message</button>
                 </form>
             </div>
         </div>
-        
-        <div class="footer">
-            © 2024 SportsMaster. All Rights Reserved.
-        </div>
     </div>
+    
+    <!-- Footer -->
+    <footer class="footer bg-black text-white text-center py-3 mt-auto">
+        © 2024 SportsMaster. All Rights Reserved.
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

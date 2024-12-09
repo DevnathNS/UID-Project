@@ -1,71 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Roboto+Slab:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Moderustic:wght@300..800&family=Roboto+Slab:wght@100..900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: "Moderustic";
 }
 
-.top {
-    display: flex;
-    flex-direction: column;
-}
-
 .bg-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
     background-color: #ffcc00;
-    width: 100vw;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding: 16px;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links li {
-    margin-left: 32px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #ffcc00;
-}
-
-.logout-btn {
-    background-color: #ffcc00;
-    color: black;
-    border: none;
-    padding: 8px 16px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.login-btn:hover {
-    background-color: #e6b800;
 }
 
 .banner {
@@ -73,36 +14,37 @@ body {
     background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url('/assets/images/bgimage.jpg');
     background-size: cover;
     background-position: center;
-    height: 837px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    position: relative;
-}
-
-.banner-content {
-    position: relative;
+    height: 85.79vh;
 }
 
 .banner-content h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 .banner-content p {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
-.footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 16px 0;
-    
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffcc00;
 }
 
 .footer p {
-    font-size: 14px;
+    font-size: 0.875rem;
+}
+
+.btn-warning {
+    background-color: #ffcc00;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-warning:hover {
+    background-color: #e6b800;
 }

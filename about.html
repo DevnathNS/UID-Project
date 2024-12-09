@@ -4,105 +4,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us | SportsMaster</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/styles/about.css">
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo">
-            <a href="home.html">
-                <img src="/assets/images/logo.png" alt="SportsMaster Logo">
-            </a>
-        </div>            
-        <ul class="nav-links">
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="store.html">Store</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-        </ul>
-        <div class="log">
-            <a href="index.html" class="logout-btn">Logout</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black px-3">
+        <a class="navbar-brand" href="home.html">
+            <img src="/assets/images/logo.png" alt="SportsMaster Logo" style="max-height: 40px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="store.html">Store</a></li>
+                <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            </ul>
+            <button class="btn btn-warning ms-3"><a href="index.html" class="text-black text-decoration-none">Logout</a></button>
         </div>
-    </div>
+    </nav>
 
-    <section class="section intro">
-        <div class="section-content">
-            <h2>Welcome to SportsMaster</h2>
-            <p>At SportsMaster, we're more than just a sporting equipment store - we're your partner in athletic excellence. Founded in 2024, we've quickly established ourselves as the go-to destination for premium sporting equipment, expert advice, and unmatched customer service.</p>
-            <p>Whether you're a professional athlete, weekend warrior, or just starting your fitness journey, we're here to equip you with the tools you need to succeed.</p>
-        </div>
-        <div class="section-image">
-            <img src="/assets/images/storefront.jpg" alt="Store Front">
-            <div class="overlay"></div>
-        </div>
-    </section>
+    <div class="container-fluid">
+        <section class="section intro row align-items-center py-5">
+            <div class="col-md-6 section-content">
+                <h2>Welcome to SportsMaster</h2>
+                <p>At SportsMaster, we're more than just a sporting equipment store - we're your partner in athletic excellence. Founded in 2024, we've quickly established ourselves as the go-to destination for premium sporting equipment, expert advice, and unmatched customer service.</p>
+                <p>Whether you're a professional athlete, weekend warrior, or just starting your fitness journey, we're here to equip you with the tools you need to succeed.</p>
+            </div>
+            <div class="col-md-6 section-image">
+                <img src="/assets/images/storefront.jpg" " alt="Store Front">
+            </div>
+        </section>
 
-    <section class="section history">
-        <div class="section-image">
-            <img src="/assets/images/history.jpg" alt="Store History">
-            <div class="overlay"></div>
-        </div>
-        <div class="section-content">
-            <h2>Our History</h2>
-            <p>Established on October 31, 2024, SportsMaster was born from a passion for sports and a vision to provide athletes with the best equipment possible. What started as a small local store has quickly grown into a trusted name in the sporting goods industry.</p>
-            <p>Our journey began with a simple idea: create a space where athletes of all levels could find high-quality equipment backed by expert knowledge and exceptional service.</p>
-        </div>
-    </section>
+        <section class="section history row align-items-center py-5 bg-light">
+            <div class="col-md-6 section-image">
+                <img src="/assets/images/history.jpg" " alt="Store History">
+            </div>
+            <div class="col-md-6 section-content">
+                <h2>Our History</h2>
+                <p>Established on October 31, 2024, SportsMaster was born from a passion for sports and a vision to provide athletes with the best equipment possible. What started as a small local store has quickly grown into a trusted name in the sporting goods industry.</p>
+                <p>Our journey began with a simple idea: create a space where athletes of all levels could find high-quality equipment backed by expert knowledge and exceptional service.</p>
+            </div>
+        </section>
 
-    <section class="section vision">
-        <div class="section-content">
-            <h2>Our Vision</h2>
-            <p>To become the world's most trusted and innovative sporting equipment provider, empowering athletes of all levels to achieve their full potential.</p>
-            <p>We envision a future where everyone has access to the highest quality sporting equipment and the knowledge to use it effectively, breaking down barriers to athletic achievement and promoting an active, healthy lifestyle.</p>
-        </div>
-        <div class="section-image">
-            <img src="/assets/images/vision.jpg" alt="Vision">
-            <div class="overlay"></div>
-        </div>
-    </section>
+        <section class="section vision row align-items-center py-5">
+            <div class="col-md-6 section-content">
+                <h2>Our Vision</h2>
+                <p>To become the world's most trusted and innovative sporting equipment provider, empowering athletes of all levels to achieve their full potential.</p>
+                <p>We envision a future where everyone has access to the highest quality sporting equipment and the knowledge to use it effectively, breaking down barriers to athletic achievement and promoting an active, healthy lifestyle.</p>
+            </div>
+            <div class="col-md-6 section-image">
+                <img src="/assets/images/vision.jpg" " alt="Vision">
+            </div>
+        </section>
 
-    <section class="section mission">
-        <div class="section-image">
-            <img src="/assets/images/mission.jpg" alt="Mission">
-            <div class="overlay"></div>
-        </div>
-        <div class="section-content">
-            <h2>Our Mission</h2>
-            <p>To provide exceptional sporting equipment and expert guidance that enables athletes to perform at their best, while fostering a community built on trust, expertise, and passion for sports.</p>
-            <p>We achieve this through personalized service, carefully curated product selections, and a commitment to staying at the forefront of sporting equipment innovation.</p>
-        </div>
-    </section>
-
-    <section class="section values">
-        <div class="section-content">
-            <h2>Our Values</h2>
-            <div class="value-grid">
-                <div class="value-item">
-                    <h3>Excellence</h3>
-                    <p>We strive for excellence in everything we do, from product selection to customer service.</p>
-                </div>
-                <div class="value-item">
-                    <h3>Integrity</h3>
-                    <p>We conduct business with honesty, transparency, and ethical practices.</p>
-                </div>
-                <div class="value-item">
-                    <h3>Innovation</h3>
-                    <p>We continuously seek new ways to improve and bring the latest advances to our customers.</p>
-                </div>
-                <div class="value-item">
-                    <h3>Community</h3>
-                    <p>We build and support the sporting community through engagement and education.</p>
+        <section class="section values row align-items-center py-5 bg-light">
+            <div class="col-md-12 section-content text-center">
+                <h2>Our Values</h2>
+                <div class="row value-grid">
+                    <div class="col-md-3 value-item">
+                        <h3>Excellence</h3>
+                        <p>We strive for excellence in everything we do, from product selection to customer service.</p>
+                    </div>
+                    <div class="col-md-3 value-item">
+                        <h3>Integrity</h3>
+                        <p>We conduct business with honesty, transparency, and ethical practices.</p>
+                    </div>
+                    <div class="col-md-3 value-item">
+                        <h3>Innovation</h3>
+                        <p>We continuously seek new ways to improve and bring the latest advances to our customers.</p>
+                    </div>
+                    <div class="col-md-3 value-item">
+                        <h3>Community</h3>
+                        <p>We build and support the sporting community through engagement and education.</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="section-image">
-            <img src="/assets/images/values.jpg" alt="Values">
-            <div class="overlay"></div>
-        </div>
-    </section>
+        </section>
+    </div>
 
-    <footer class="footer">
+    <footer class="footer bg-black text-white text-center py-3">
         <p>© 2024 SportsMaster. All Rights Reserved.</p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
