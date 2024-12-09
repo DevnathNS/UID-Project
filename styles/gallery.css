@@ -1,91 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Moderustic:wght@300..800&family=Roboto+Slab:wght@100..900&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: "Moderustic";
+    font-family: "Moderustic", sans-serif;
     background-color: #f5f5f5;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    background-color: black;
+.gallery-bg {
     background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)), url("../assets/images/gallery-bg.jpg");
     background-size: cover;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding: 16px;
-}
-
-.nav-links {
-    display: flex;
-    list-style: none;
-}
-
-.nav-links li {
-    margin-left: 32px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-    transition: color 0.3s;
-}
-
-.nav-links a:hover {
-    color: #ffcc00;
-}
-
-.logout-btn {
-    background-color: #ffcc00;
-    color: black;
-    border: none;
-    padding: 8px 16px;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.logout-btn:hover {
-    background-color: #e6b800;
+    min-height: 100vh;
 }
 
 .gallery-container {
     padding: 40px 20px;
-}
-
-h1 {
-    text-align: center;
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
-p {
-    text-align: center;
-    color: #ffffff;
-    margin-bottom: 30px;
-}
-
-.gallery {
-    display: grid;
-    grid-template-areas: 
-        "gal1 gal2 gal3"
-        "gal4 gal5 gal6";
-    gap: 20px;
-    padding: 40px;
-    justify-content: center;
 }
 
 .gallery-item {
@@ -102,13 +29,6 @@ p {
     transform: scale(1.02);
     background-color: #e6b8007e;
 }
-
-.gallery-item:nth-child(1) { grid-area: gal1; }
-.gallery-item:nth-child(2) { grid-area: gal2; }
-.gallery-item:nth-child(3) { grid-area: gal3; }
-.gallery-item:nth-child(4) { grid-area: gal4; }
-.gallery-item:nth-child(5) { grid-area: gal5; }
-.gallery-item:nth-child(6) { grid-area: gal6; }
 
 .gallery-item img {
     width: 100%;
@@ -139,13 +59,9 @@ p {
     font-size: 20px;
     font-weight: bold;
     margin: 0;
-    text-shadow: 5px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 
-.footer {
-    text-align: center;
-    background-color: black;
-    color: white;
-    padding: 16px;
-    margin-top: auto;
+.navbar-brand img {
+    max-height: 40px;
 }
