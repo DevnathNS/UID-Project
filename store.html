@@ -24,6 +24,7 @@
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="store.html">Store</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
                     <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
                 </ul>
                 <button class="btn btn-warning ms-3">
@@ -40,6 +41,9 @@
                         <div class="product-overlay">
                             <p>High-quality cricket bat for professional use.</p>
                             <a href="order.html" class="order-btn">Order Now</a>
+                            <button onclick="addToCart('Cricket Bat', 1000, 'assets/images/cricket-bat.jpg')" class="order-btn mt-2">
+                                Add to Cart
+                            </button>
                         </div>
                         <div class="p-3 text-center">
                             <h3 class="h5">Cricket Bat</h3>
@@ -54,6 +58,9 @@
                         <div class="product-overlay">
                             <p>Durable football for outdoor games and training.</p>
                             <a href="order.html" class="order-btn">Order Now</a>
+                            <button onclick="addToCart('Football', 500, 'assets/images/football.jpg')" class="order-btn mt-2">
+                                Add to Cart
+                            </button>
                         </div>
                         <div class="p-3 text-center">
                             <h3 class="h5">Football</h3>
@@ -68,6 +75,9 @@
                         <div class="product-overlay">
                             <p>Professional-grade tennis racket for all levels.</p>
                             <a href="order.html" class="order-btn">Order Now</a>
+                            <button onclick="addToCart('Tennis Racket', 2000, 'assets/images/tennis.jpg')" class="order-btn mt-2">
+                                Add to Cart
+                            </button>
                         </div>
                         <div class="p-3 text-center">
                             <h3 class="h5">Tennis Racket</h3>
@@ -82,6 +92,9 @@
                         <div class="product-overlay">
                             <p>Official size basketball for training and games.</p>
                             <a href="order.html" class="order-btn">Order Now</a>
+                            <button onclick="addToCart('Basketball', 800, 'assets/images/basketball.jpg')" class="order-btn mt-2">
+                                Add to Cart
+                            </button>
                         </div>
                         <div class="p-3 text-center">
                             <h3 class="h5">Basketball</h3>
@@ -96,6 +109,9 @@
                         <div class="product-overlay">
                             <p>Durable shuttlecock for both indoor and outdoor use.</p>
                             <a href="order.html" class="order-btn">Order Now</a>
+                            <button onclick="addToCart('Shuttlecock', 200, 'assets/images/shuttlecock.jpg')" class="order-btn mt-2">
+                                Add to Cart
+                            </button>
                         </div>
                         <div class="p-3 text-center">
                             <h3 class="h5">Shuttlecock</h3>
@@ -110,6 +126,9 @@
                         <div class="product-overlay">
                             <p>Lightweight hockey stick designed for speed and control.</p>
                             <a href="order.html" class="order-btn">Order Now</a>
+                            <button onclick="addToCart('Hockey Stick', 1500, 'assets/images/hockey-stick.jpg')" class="order-btn mt-2">
+                                Add to Cart
+                            </button>
                         </div>
                         <div class="p-3 text-center">
                             <h3 class="h5">Hockey Stick</h3>
@@ -124,6 +143,9 @@
                         <div class="product-overlay">
                             <p>Perfect volleyball for recreational and professional play.</p>
                             <a href="order.html" class="order-btn">Order Now</a>
+                            <button onclick="addToCart('Volleyball', 700, 'assets/images/volleyball.jpg')" class="order-btn mt-2">
+                                Add to Cart
+                            </button>
                         </div>
                         <div class="p-3 text-center">
                             <h3 class="h5">Volleyball</h3>
@@ -138,6 +160,9 @@
                         <div class="product-overlay">
                             <p>Quality baseball for both practice and matches.</p>
                             <a href="order.html" class="order-btn">Order Now</a>
+                            <button onclick="addToCart('Baseball', 600, 'assets/images/baseball.jpg')" class="order-btn mt-2">
+                                Add to Cart
+                            </button>
                         </div>
                         <div class="p-3 text-center">
                             <h3 class="h5">Baseball</h3>
@@ -152,6 +177,9 @@
                         <div class="product-overlay">
                             <p>Sturdy skateboard for all levels of riders.</p>
                             <a href="order.html" class="order-btn">Order Now</a>
+                            <button onclick="addToCart('Skateboard', 3000, 'assets/images/skateboard.jpg')" class="order-btn mt-2">
+                                Add to Cart
+                            </button>
                         </div>
                         <div class="p-3 text-center">
                             <h3 class="h5">Skateboard</h3>
@@ -169,5 +197,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="scripts/cart.js"></script>
 </body>
 </html>
